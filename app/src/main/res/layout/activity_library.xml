@@ -4,6 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Library">
+    tools:context=".Library"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/LeftText"
+        android:background="@color/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/left_text"/>
+    
+    <TextView
+        android:id="@+id/BelowLeftText"
+        android:background="@color/purple"
+        android:layout_below="@id/LeftText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/below_left_text"/>
+
+    <TextView
+        android:id="@+id/RightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/right_text"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:id="@+id/CenterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="@string/center_text"
+        android:background="@color/deep_purple"/>
+
+    <TextView
+        android:id="@+id/BottomCenterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="@string/bottom_center_text"
+        android:background="@color/indigo"/>
+
+    <TextView
+        android:id="@+id/AboveBottomCenterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/BottomCenterText"
+        android:layout_centerHorizontal="true"
+        android:text="@string/above_bottom_center_text"
+        android:background="@color/blue"/>
+
+
+
 
 </RelativeLayout>
